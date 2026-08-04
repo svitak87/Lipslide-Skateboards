@@ -1,0 +1,19 @@
+@use "../utilities/variables";
+
+.navbar-custom {
+  background-color: variables.$primary;
+  .navbar-toggler {
+    background-color: variables.$whiter;
+    &:hover {
+      background-color: variables.$secondary;
+      color: variables.$text;
+    }
+  }
+  .nav-link {
+    color: variables.$text;
+    font-weight: 600;
+    &:hover {
+      color: variables.$whiter;
+    }
+  }
+}

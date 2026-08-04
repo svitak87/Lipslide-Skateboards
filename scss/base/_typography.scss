@@ -1,0 +1,27 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+h1 {
+  @include mixins.typography(2.5rem, 700, -2px);
+}
+
+h2 {
+  @include mixins.typography(1.5rem, 400, -1px);
+}
+
+h3 {
+  @include mixins.typography(1.3rem, 400);
+}
+
+p {
+  @include mixins.typography(1rem, 400, normal, 1.2rem);
+}
+
+a {
+  text-decoration: none;
+  color: variables.$secondary;
+
+  &:hover {
+    color: variables.$whiter;
+  }
+}
