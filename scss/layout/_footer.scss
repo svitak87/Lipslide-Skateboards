@@ -1,5 +1,50 @@
 @use "../utilities/variables";
 
-footer{
-    background-color: variables.$secondary;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$secondary;
+  padding: 2rem 1rem;
+  .footer-title {
+    color: variables.$whiter;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .menu-list {
+    padding: 0;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: variables.$whiter;
+    .list-item {
+      list-style: none;
+      margin-bottom: 0.5rem;
+      a {
+        color: variables.$whiter;
+        text-decoration: none;
+      }
+    }
+  }
+  .social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 1.2rem;
+    color: variables.$whiter;
+
+    a {
+      font-size: 1.5rem;
+      transition: transform 0.2s ease;
+      color: variables.$whiter;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+  .copy-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: variables.$whiter;
+  }
 }

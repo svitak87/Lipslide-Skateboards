@@ -1,0 +1,43 @@
+@use "../utilities/variables";
+
+.blog-hero-section-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: variables.$whiter;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .blog-title {
+    color: variables.$secondary;
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 700;
+    top: 150px;
+    right: 20px;
+  }
+
+  .blog-article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .blog-subtitle {
+      color: variables.$secondary;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+    }
+    p {
+        color: variables.$surface;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        br {
+          display: block;
+          margin-bottom: 50px;
+        }
+    }
+  }
+}
