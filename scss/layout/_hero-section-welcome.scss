@@ -1,0 +1,6 @@
+@use "../utilities/variables";
+
+.hero-section-welcome-container{
+    padding: 20px;
+    color: variables.$whiter;
+}

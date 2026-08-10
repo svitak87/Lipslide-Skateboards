@@ -108,4 +108,13 @@ a:hover {
   display: block;
 }
 
+.hero-section-welcome-container {
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  background-color: #E63946;
+}
+
 /*# sourceMappingURL=styles.css.map */
