@@ -44,7 +44,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
     color: variables.$whiter;
+    .copy-right{
+      font-size: 0.7rem;
+    }
   }
 }

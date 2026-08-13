@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Tienda skate | Lipslide - Skateboards</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Lip Slide Skateboards - Skates</title>
   </head>
   <body>
     <header>
@@ -22,7 +22,7 @@
         <div class="container-fluid">
           <img
             class="navbar-brand"
-            src="./assets/logo/lipslide-skateboards-logo.png"
+            src="../assets/logo/lipslide-skateboards-logo.png"
             alt="Lipslide logo"
           />
           <button
@@ -42,18 +42,18 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./pages/skates.html"
-                  >Tablas</a
+                  href="../index.html"
+                  >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="./skates.html">Tablas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                <a class="nav-link" href="#">Disabled</a>
               </li>
             </ul>
           </div>
@@ -61,70 +61,62 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section-image-container">
-        <img
-          src="./assets/hero/hero-image-isection.jpg"
-          alt="Skater realizando un truco"
-        />
-        <h1 class="hero-section-title">Lipslide llegó con todo!!</h1>
-      </section>
-      <section class="hero-section-welcome-container">
-        <h2 class="hero-section-welcome-subtitle">
-          ¡Bienvenido a nuestra tienda de skate!
-        </h2>
-        <p class="hero-section-welcome-text">
-          En nuestra tienda encontrarás todo lo que necesitas para disfrutar del
-          mundo del skateboarding. Desde tablas y ruedas hasta ropa y
-          accesorios, tenemos todo lo que un skater necesita para destacar en la
-          pista.
-        </p>
-      </section>
-
-      <section class="blog-hero-section-container">
-        <img src="./assets/hero/blog-img-niños-tea.webp" alt="" />
-        <h2 class="blog-title">WE RIDE WITH PRIDE: Proyecto SKA-TEA</h2>
-        <article class="blog-article">
-          <h3 class="blog-subtitle">
-            Cómo el skateboarding favorece el impulso y el desarrollo de niñas y
-            niños con TEA.
-          </h3>
-          <p>
-            Los niños con Trastorno del Espectro Autista (TEA) suelen enfrentar
-            barreras extra para participar en deportes convencionales debido a
-            las dificultades de comunicación, la socialización y el control
-            motor. Estudios recientes destacan que el deporte puede ser
-            beneficioso para estas infancias en múltiples dimensiones físicas,
-            psicológicas y sociales. Sin embargo, para que esta intervención sea
-            efectiva se requieren programas adaptados, flexibles y con apoyo
-            especializado.</p>
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-intro">
+            <h2>¡Hablemos de skate!</h2>
             <p>
-
-              skateboarding es especialmente atractivo para niñas y niños con TEA,
-              revisamos la evidencia científica y compartimos nuestra experiencia
-              en The Brotherhood, a través de nuestro programa de acción social de
-              skateboarding We Ride With Pride, que llevó a cabo un proyecto
-              piloto con 10 niños/as (3 niñas y 7 niños) de entre 7 y 10 años con
-            En este blog de exposición exploramos por qué el
-              TEA.</p>
-              <p> Mostramos cómo implementamos clases de skate adaptadas, junto
-              con recomendaciones para familias y profesionales. Cabe señalar que
-              We Ride With Pride es el programa de acción social de The
-              Brotherhood, club deportivo de skate que impulsa este tipo de
-              intervenciones a favor de la infancia y adolescencia en riesgo de
-            exclusión social.
+              ¿Tienes algo en mente? ¿Buscas una tabla, necesitas asesoramiento
+              o simplemente quieres compartir tu pasión por el skate?
             </p>
-          </p>
-        </article>
+            <p>Escríbenos y estaremos encantados de ayudarte.</p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="full-name">Nombre completo</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Escribe tu nombre completo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Cuéntanos qué necesitas..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="contact-button">Enviar mensaje</button>
+        </form>
       </section>
     </main>
-
     <footer class="footer-container">
       <ul class="menu-list">
         <h4 class="footer-title">Menú</h4>
-        <li class="list-item"><a href="./pages/skates.html">Tablas</a></li>
-        <li class="list-item"><a href="#">Features</a></li>
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="./skates.html">Tablas</a></li>
         <li class="list-item"><a href="#">Pricing</a></li>
-        <li class="list-item"><a href="./pages/contact.html">Contacto</a></li>
+        <li class="list-item"><a href="#">Disabled</a></li>
       </ul>
       <div class="footer-social-text-container">
         <h4 class="footer-title">Síguenos en redes sociales</h4>
