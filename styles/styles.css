@@ -155,7 +155,7 @@ a:hover {
 .blog-hero-section-container .blog-title {
   color: #E63946;
   position: absolute;
-  font-size: 1.6rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
   top: 150px;
   right: 20px;
@@ -167,7 +167,8 @@ a:hover {
 }
 .blog-hero-section-container .blog-article .blog-subtitle {
   color: #E63946;
-  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  font-weight: 700;
   line-height: 1.5rem;
 }
 .blog-hero-section-container .blog-article p {
@@ -459,13 +460,74 @@ a:hover {
   transform: translateY(-3px);
 }
 .footer-container .copy-container {
+  margin-top: 20px;
+  width: 100%;
+  flex-direction: column;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: left;
   color: white;
 }
 .footer-container .copy-container .copy-right {
-  font-size: 0.7rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section-image-container {
+    height: 600px;
+  }
+  .hero-section-welcome-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-section-welcome-container .hero-section-welcome-text {
+    padding: 0 100px;
+  }
+  .hero-section-welcome-container .hero-section-welcome-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .hero-section-welcome-container .hero-section-welcome-text p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .blog-hero-section-container .anime-blog-image {
+    height: 500px;
+  }
+  .blog-hero-section-container .blog-article {
+    padding: 100px 150px;
+    line-height: 3rem;
+  }
+  .blog-hero-section-container .blog-article .blog-subtitle {
+    margin-bottom: 50px;
+  }
+  .blog-hero-section-container .blog-article p {
+    font-size: 1.2rem;
+  }
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .contact-container .contact-form .form-group {
+    margin: 10px 0;
+  }
+  .contact-container .contact-form .contact-button {
+    width: 50%;
+  }
+  .copy-container {
+    width: 34%;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -41,12 +41,14 @@
     }
   }
   .copy-container{
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: left;
     color: variables.$whiter;
     .copy-right{
-      font-size: 0.7rem;
+      font-size: clamp(0.8rem, 2vw, 1rem);
     }
   }
 }

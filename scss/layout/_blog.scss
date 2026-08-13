@@ -15,7 +15,7 @@
   .blog-title {
     color: variables.$secondary;
     position: absolute;
-    font-size: 1.6rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 700;
     top: 150px;
     right: 20px;
@@ -27,8 +27,10 @@
     padding: 20px;
     .blog-subtitle {
       color: variables.$secondary;
-      font-size: 1.3rem;
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      font-weight: 700;
       line-height: 1.5rem;
+  
     }
     p {
         color: variables.$surface;

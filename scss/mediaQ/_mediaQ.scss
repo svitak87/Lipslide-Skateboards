@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .hero-section-image-container {
+    height: 600px;
+  }
+  .hero-section-welcome-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    .hero-section-welcome-text {
+      padding: 0 100px;
+      h2 {
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+  .blog-hero-section-container {
+    .anime-blog-image {
+      height: 500px;
+    }
+    .blog-article {
+      padding: 100px 150px;
+      line-height: 3rem;
+      .blog-subtitle {
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .contact-form {
+      .form-group {
+        margin: 10px 0;
+      }
+      .contact-button{
+        width: 50%;
+      }
+    }
+  }
+  .copy-container{
+    width: 34%;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+}
