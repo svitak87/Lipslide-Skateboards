@@ -4,13 +4,14 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 500px;
 
   .hero-section-title {
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: 100px;
     color: variables.$whiter;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 6vw, 4.5rem);
     text-align: left;
     background-color: variables.$secondary;
     line-height: 0.9;
