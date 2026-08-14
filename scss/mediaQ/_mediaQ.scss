@@ -72,6 +72,10 @@
     max-width: 1280px;
     margin: 0 auto;
     text-align: left;
+    .team-card__info,
+    h2 {
+      width: 100%;
+    }
   }
   .copy-container {
     width: 34%;
@@ -79,6 +83,24 @@
     align-items: left;
     text-align: left;
   }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .team-grid {
+    width: 100%;
+  }
+
+  .contact-container {
+    height: auto;
+    margin-bottom: 0px;
+    .contact-intro,
+    .contact-form {
+      margin-top: 180px;
+      height: auto;
+    }
+  }
+
+
 }
 
 @media (hover: none) {

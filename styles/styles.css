@@ -194,7 +194,7 @@ a:hover {
 }
 .team-container .team-card .team-card__info .team-card__info,
 .team-container .team-card .team-card__info h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
   margin-bottom: 10px;
 }
 .team-container .team-card .team-card__info .team-card__info,
@@ -607,11 +607,29 @@ a:hover {
     margin: 0 auto;
     text-align: left;
   }
+  .team-grid .team-card__info,
+  .team-grid h2 {
+    width: 100%;
+  }
   .copy-container {
     width: 34%;
     flex-direction: column;
     align-items: left;
     text-align: left;
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .team-grid {
+    width: 100%;
+  }
+  .contact-container {
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .contact-container .contact-intro,
+  .contact-container .contact-form {
+    margin-top: 180px;
+    height: auto;
   }
 }
 @media (hover: none) {
