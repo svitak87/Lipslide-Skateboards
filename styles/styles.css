@@ -139,6 +139,73 @@ a:hover {
   color: white;
 }
 
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+}
+.team-container .team-title {
+  display: inline-block;
+  padding-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.team-container .team-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 4px;
+  border-radius: 2px;
+}
+.team-container .team-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 50px 0;
+  padding: 10px;
+  border-radius: 14px;
+}
+.team-container .team-card .team-card__image {
+  width: 100%;
+  display: block;
+}
+.team-container .team-card .team-card__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.team-container .team-card .team-card__info {
+  position: relative;
+  background-color: white;
+  border: 1px solid #FFD400;
+  padding: 10px 10px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.team-container .team-card .team-card__info .team-card__info,
+.team-container .team-card .team-card__info h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 10px;
+}
+.team-container .team-card .team-card__info .team-card__info,
+.team-container .team-card .team-card__info img {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  width: 50px;
+  height: auto;
+}
+
 .blog-hero-section-container {
   position: relative;
   width: 100%;
@@ -277,7 +344,6 @@ a:hover {
   width: 56px;
   height: 4px;
   border-radius: 2px;
-  background-color: #E63946;
 }
 .hero-section-skates-container .skate-card-grid {
   display: grid;
@@ -472,6 +538,14 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .skate-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -511,6 +585,9 @@ a:hover {
   .blog-hero-section-container .blog-article p {
     font-size: 1.2rem;
   }
+  .skate-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .contact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -522,11 +599,52 @@ a:hover {
   .contact-container .contact-form .contact-button {
     width: 50%;
   }
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    gap: 28px;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+  }
   .copy-container {
     width: 34%;
     flex-direction: column;
     align-items: left;
     text-align: left;
+  }
+}
+@media (hover: none) {
+  .skate-card {
+    transition: none;
+  }
+  .skate-card .skate-card__image {
+    animation: none;
+  }
+  .skate-card .skate-card__specs {
+    position: static;
+    max-height: none;
+    padding: 0 20px 18px;
+    background-color: transparent;
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skate-card {
+    transition: none;
+  }
+  .skate-card .skate-card__image {
+    animation: none;
+  }
+  .skate-card .skate-card__specs {
+    position: static;
+    max-height: none;
+    padding: 0 20px 18px;
+    background-color: transparent;
+    opacity: 1;
+    transform: none;
+    animation: none;
   }
 }
 

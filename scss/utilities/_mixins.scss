@@ -9,3 +9,17 @@
   letter-spacing: $spacing;
   line-height: $line-height;
 }
+
+@mixin skaterCard($width) {
+  width: $width;
+  overflow: hidden;
+  position: relative;
+}
+
+@mixin skaterCardImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
