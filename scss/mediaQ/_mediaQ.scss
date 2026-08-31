@@ -11,6 +11,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .info-hero-section-container {
+        flex-direction: row;
+        padding: 3rem 1.5rem;
+
+        .info-card {
+            flex: 1;
+            padding: 1rem;
+        }
+    }
 }
 
 @media (min-width: 1024px) {

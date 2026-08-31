@@ -248,6 +248,86 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.info-hero-section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.info-hero-section-container .info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: white;
+  padding: 3rem;
+}
+.info-hero-section-container .info-card .icon-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.info-hero-section-container .info-card .icon-text-container:hover {
+  cursor: pointer;
+}
+.info-hero-section-container .info-card .icon-text-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.info-hero-section-container .info-card .icon-text-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px auto;
+  text-align: center;
+}
+.info-hero-section-container .info-card .icon-text-container p {
+  background: #E63946;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.info-hero-section-container .info-card .icon-text-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.shipping-info {
+  background: white;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+.shipping-info ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.shipping-info li {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+}
+.shipping-info a {
+  color: #E63946;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.shipping-info a:hover {
+  opacity: 0.8;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -549,6 +629,14 @@ a:hover {
   .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .info-hero-section-container {
+    flex-direction: row;
+    padding: 3rem 1.5rem;
+  }
+  .info-hero-section-container .info-card {
+    flex: 1;
+    padding: 1rem;
   }
 }
 @media (min-width: 1024px) {

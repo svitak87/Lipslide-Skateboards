@@ -1,0 +1,62 @@
+@use "../utilities/variables";
+
+.info-hero-section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: variables.$whiter;
+    padding: 3rem;
+
+    .icon-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      p {
+        background: variables.$secondary;
+        color: variables.$whiter;
+        font-size: 1.2rem;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
