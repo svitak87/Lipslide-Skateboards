@@ -630,6 +630,9 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer-container .footer-title {
+    display: none;
+  }
   .info-hero-section-container {
     flex-direction: row;
     padding: 3rem 1.5rem;
