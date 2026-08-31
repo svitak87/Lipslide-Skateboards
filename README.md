@@ -14,7 +14,9 @@ Tienda de skateboards estática desarrollada con HTML5, CSS3 y Sass/SCSS. El pro
 - **animate.css 4.1.1** - Librería de animaciones CSS. Se carga vía CDN (utilizada únicamente en la página de equipo).
 
 ---
+## Puedes ver el proyecto en producción
 
+<https://lipslide-skateboards-store.vercel.app/index.html>
 ## Instalación
 
 ### Prerrequisitos
